@@ -1,0 +1,16 @@
+<h1>新規投稿ページ</h1>
+
+<%= form_with url: "/posts", method: :post, local: true do |form| %>
+  <%= form.text_field :content %>
+  <%= form.submit '投稿する' %>
+  <% end %>
+
+  <%# <%= link_to 'リンクに表示する文字', 'リンク先のURL' %>
+  <%# リンク先をURLで指定する場合 %>
+  
+  <%# <%= link_to 'リンクに表示する文字', 'パス', method: :HTTPメソッド %>
+  <%# リンク先をパスで指定する場合 %>
+
+  <%# <%= link_to '新規投稿', '/posts/new', method: :GET %>
+  <%# link_toメソッドでパスを指定する場合、何も指定しなければデフォルトでGETメソッドが設定されます。 %>
+  <%# したがって、GETメソッドの指定を省略して記述することができます。 %>
